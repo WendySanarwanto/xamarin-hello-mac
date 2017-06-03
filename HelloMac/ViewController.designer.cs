@@ -7,22 +7,22 @@
 using Foundation;
 using System.CodeDom.Compiler;
 
-namespace Hello_Mac
+namespace HelloMac
 {
     [Register ("ViewController")]
     partial class ViewController
     {
         [Outlet]
-        AppKit.NSTextField ClickedLabel { get; set; }
+        AppKit.NSTextField labelOutput { get; set; }
 
-        [Action ("ClickedButton:")]
-        partial void ClickedButton (Foundation.NSObject sender);
+        [Action ("onButtonClicked:")]
+        partial void onButtonClicked (Foundation.NSObject sender);
         
         void ReleaseDesignerOutlets ()
         {
-            if (ClickedLabel != null) {
-                ClickedLabel.Dispose ();
-                ClickedLabel = null;
+            if (labelOutput != null) {
+                labelOutput.Dispose ();
+                labelOutput = null;
             }
         }
     }

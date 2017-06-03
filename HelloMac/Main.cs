@@ -1,6 +1,6 @@
 ﻿using AppKit;
 
-namespace Hello_Mac
+namespace HelloMac
 {
     static class MainClass
     {

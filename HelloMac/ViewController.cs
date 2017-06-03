@@ -3,7 +3,7 @@
 using AppKit;
 using Foundation;
 
-namespace Hello_Mac
+namespace HelloMac
 {
     public partial class ViewController : NSViewController
     {
@@ -18,7 +18,7 @@ namespace Hello_Mac
             base.ViewDidLoad();
 
             // Do any additional setup after loading the view.
-            ClickedLabel.StringValue = "Button has not been clicked yet.";
+            labelOutput.StringValue = "Button has not been clicked yet.";
         }
 
         public override NSObject RepresentedObject
@@ -34,12 +34,13 @@ namespace Hello_Mac
             }
         }
 
-        partial void ClickedButton(NSObject sender)
+        partial void onButtonClicked(NSObject sender)
         {
-            // Update counter and label
-            ClickedLabel.StringValue = string.Format("The button has been clicked {0} time{1}.",
-                                                     ++numberOfTimesClicked,
-                                                     numberOfTimesClicked < 2 ? "" : "s");
+            numberOfTimesClicked++;
+            string message = string.Format("The button has been clicked {0} time{1}",
+                                           numberOfTimesClicked,
+                                           numberOfTimesClicked < 2 ? "" : "s");
+            labelOutput.StringValue = message;
         }
     }
 }

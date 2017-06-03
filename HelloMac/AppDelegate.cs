@@ -1,7 +1,7 @@
 ﻿using AppKit;
 using Foundation;
 
-namespace Hello_Mac
+namespace HelloMac
 {
     [Register("AppDelegate")]
     public class AppDelegate : NSApplicationDelegate

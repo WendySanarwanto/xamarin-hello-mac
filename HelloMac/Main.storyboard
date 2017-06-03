@@ -12,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Hello,_Mac" id="1Xt-HY-uBw">
+                            <menuItem title="HelloMac" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Hello,_Mac" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="HelloMac" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Hello,_Mac" id="5kV-Vb-QxS">
+                                        <menuItem title="About HelloMac" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Hello,_Mac" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide HelloMac" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Hello,_Mac" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit HelloMac" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -629,7 +629,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Hello,_Mac Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="HelloMac Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -652,10 +652,10 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Hello Mac" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="597" y="334" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
@@ -674,26 +674,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c7p-oM-dC0">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DS6-99-JYh">
                                 <rect key="frame" x="14" y="222" width="81" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="lr0-nt-qqS"/>
-                                    <constraint firstAttribute="height" constant="21" id="tVQ-Ge-hDJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="OYq-al-6FU"/>
+                                    <constraint firstAttribute="width" constant="69" id="s8b-9i-gYd"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Click Me" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aAe-f3-cU5">
+                                <buttonCell key="cell" type="push" title="Click Me" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="siu-mH-l8z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="ClickedButton:" target="XfG-lQ-9wD" id="JL1-kR-d4k"/>
+                                    <action selector="onButtonClicked:" target="XfG-lQ-9wD" id="EM0-xK-apC"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okM-nD-4Gq">
-                                <rect key="frame" x="97" y="232" width="365" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="17" id="hyo-Ys-OFa"/>
-                                </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="XPh-EC-BYZ">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2c-8Z-2DP">
+                                <rect key="frame" x="102" y="232" width="360" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="T4e-O2-k8i">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -701,15 +699,12 @@
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="c7p-oM-dC0" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Yia-8c-pns"/>
-                            <constraint firstItem="c7p-oM-dC0" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="b52-4L-tWP"/>
-                            <constraint firstAttribute="trailing" secondItem="okM-nD-4Gq" secondAttribute="trailing" constant="20" id="ipy-pw-lbm"/>
-                            <constraint firstItem="okM-nD-4Gq" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="21" id="sqZ-z0-uPA"/>
-                            <constraint firstItem="okM-nD-4Gq" firstAttribute="leading" secondItem="c7p-oM-dC0" secondAttribute="trailing" constant="16" id="yfw-h9-Srq"/>
+                            <constraint firstItem="DS6-99-JYh" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="ORA-6D-PCv"/>
+                            <constraint firstItem="DS6-99-JYh" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="u3M-ca-CSX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ClickedLabel" destination="okM-nD-4Gq" id="yX6-cx-LlG"/>
+                        <outlet property="labelOutput" destination="R2c-8Z-2DP" id="dnF-Q5-rR8"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

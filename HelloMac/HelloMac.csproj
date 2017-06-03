@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{17556356-B1A7-45FD-AF8C-10D7DCE3964D}</ProjectGuid>
+    <ProjectGuid>{C999A044-E13B-43D9-BEAA-688CB60EE436}</ProjectGuid>
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Hello_Mac</RootNamespace>
-    <AssemblyName>Hello,_Mac</AssemblyName>
+    <RootNamespace>HelloMac</RootNamespace>
+    <AssemblyName>HelloMac</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
